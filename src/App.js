@@ -31,7 +31,8 @@ function App() {
   const [results, setResults] = useState(null);
 
   function handleCalcMoisture() {
-    if (soilType === "" || soilMoisture === 0) return
+    if (soilType === null) return
+    if (soilMoisture === null) return
     let rci = Number(Math.exp(soilValues[soilType][0] - (soilValues[soilType][1] * Math.log(soilMoisture)))).toFixed(1);
     setResults(rci)
   }
@@ -46,8 +47,8 @@ function App() {
 
   function handleReset() {
     setResults(null);
-    setSoilType("");
-    setSoilMoisture(0);
+    setSoilType(null);
+    setSoilMoisture("");
   }
 
   return (
