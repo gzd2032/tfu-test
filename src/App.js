@@ -19,6 +19,7 @@ const soilValues = {
   "SM-SC": [12.542, 2.955],
   "CL": [15.506, 3.530],
   "ML": [11.936, 2.407],
+  "CL-ML": [14.236, 3.137],
   "CH": [13.686, 2.705],
   "MH": [23.641, 5.191],
   "OL": [17.399, 3.584],
@@ -93,7 +94,7 @@ function App() {
                     <MenuItem value="SM-SC">SM-SC</MenuItem >
                     <MenuItem value="CL">CL</MenuItem >
                     <MenuItem value="ML">ML</MenuItem >
-                    <MenuItem value="CLML">CLML</MenuItem >
+                    <MenuItem value="CL-ML">CL-ML</MenuItem >
                     <MenuItem value="CH">CH</MenuItem >
                     <MenuItem value="MH">MH</MenuItem >
                     <MenuItem value="OL">OL</MenuItem >
